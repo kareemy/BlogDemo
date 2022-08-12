@@ -6,10 +6,10 @@ namespace BlogDemo
     public class Post
     {
         public int PostId {get; set;}
-        public string Title {get; set;}
+        public string Title {get; set;} = string.Empty;
         // Add navigation property to MANY side
         // Each Post belongs to ONE Blog        
-        public Blog Blog {get; set;} // Navigation property
+        public Blog Blog {get; set;} = null!; // Navigation property
         public int BlogId {get; set;} // Foreign Key
 
         public override string ToString()

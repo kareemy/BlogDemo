@@ -11,7 +11,7 @@ namespace BlogDemo
         }
         
         // STEP 1: Add DBSet<> to model for each entity class
-        public DbSet<Blog> Blogs {get; set;}
-        public DbSet<Post> Posts {get; set;}
+        public DbSet<Blog> Blogs {get; set;} = null!;
+        public DbSet<Post> Posts {get; set;} = null!;
     }
 }
